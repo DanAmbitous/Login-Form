@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-image: url('mountains.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  background: rgba(155, 179, 200, 0.555);
+  padding: 1vw;
+  border-radius: 1vw;
+  width: 50vw;
+}
+
+.flex-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-inner-container label::after {
+  content: ' *';
+}
+
+input {
+  padding: 1vw;
+  border: 1px white solid;
+  margin: 1vw;
+  border-radius: 1vw;
+}
+
+.flex-inner-container button {
+  width: calc(100% - 10vw);
+  margin: 0 auto;
+  padding: 1vh;
+  background:rgba(255, 255, 255, 0.555);
+  border: 0;
+  border-radius: 1vw;
+  cursor:pointer;
+}
+
+button:active {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px white;
+  }
+  to {
+    box-shadow: 0 0 10px 10px white;
+  }
+}
